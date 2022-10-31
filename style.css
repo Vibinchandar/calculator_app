@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator{
+  margin-top: 100px;
+  background-color:rgb(92, 170, 238);
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  margin-top: 20px;
+  background-color: rgb(125, 201, 207);
+  width: 400px;
+  height: 3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ans{
+  width: 400px;
+  height: 3rem;
+  font-size: 20px;
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  margin-bottom: 10px;  
+}
+.btn_container{
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  width: 600px;
+  height: 330px;
+  font-size: 20px;
+  background-color: white;
+  position: relative;
+}
+.rows,.sum{
+  display: flex;
+}
+.num{
+  border-width: 1px;
+  width: 100px;
+  height: 3rem;
+  border-style: solid;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.num1{
+  border-width: 1px;
+    width: 200px;
+    height: 3rem;
+    border-style: solid;    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#result {
+  width: 400px;
+  height: 3rem;
+}
+input {
+  background-color: rgb(241, 241, 241);
+  border-style: none;
+  font-size: 30px;
+  text-align: end;
+}
+#sp{
+  background-color: brown;
+}
+@media screen and (max-width:375px){
+  .calculator{
+    margin-top: 100px;
+    background-color:gainsboro;
+    width: 150px;
+    height: 150px;
+    border:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    margin-top: 20px;
+    background-color: darkgrey;
+    width: 150px;
+    height: 2rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .ans{
+    width: 150px;
+    height: 2rem;
+    font-size: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-bottom: 10px;  
+  }
+  .btn_container{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    width: 200px;
+    height: 130px;
+    font-size: 20px;
+    background-color: white;
+  position: relative;
+}
+#result {
+  width: 200px;
+  height: 2rem;
+}
+}
